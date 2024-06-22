@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-const About = () => {
+function About() {
   return (
     <div>
-        
+      <h1 className="text-3xl font-bold">About Us</h1>
+      <p>Learn more about us.</p>
     </div>
-  )
+  );
 }
 
-export default About
+export default About;
