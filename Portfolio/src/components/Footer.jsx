@@ -1,17 +1,10 @@
-import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-purple-800 text-white py-8">
+    <footer className="bg-black text-white py-8">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
-        <div className="w-full md:w-1/3">
-          <img
-            src="https://t3.ftcdn.net/jpg/07/46/43/38/240_F_746433842_oDhkd6pQWgup3unOmjxqGqDb8IF6Dyk2.jpg"
-            alt="Decorative"
-            className="object-cover w-11/12 rounded-md"
-          />
-        </div>
-        <div className="w-full md:w-2/3 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+       
+        <div className="w-full md:w-2/3 flex flex-col md:flex-row items-center mt-5 justify-between space-y-4 md:space-y-0">
           <div className="w-full md:w-auto flex items-center space-x-2">
             <input
               type="email"

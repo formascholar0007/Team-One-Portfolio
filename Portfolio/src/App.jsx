@@ -1,8 +1,10 @@
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-import Github from "./pages/Github";
 import About from "./pages/About";
+import StyleGuide from "./pages/StyleGuide"
+import GetTheme from "./pages/GetTheme";
+import "./App.css"
 import './index.css';
 
 
@@ -18,10 +20,11 @@ function App() {
 
           <div className="container mx-auto mt-4">
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/github" element={<Github />} />
+            <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/style-guide" element={<StyleGuide />} />
+          <Route path="/get-theme" element={<GetTheme />} />
             </Routes>
           </div>
         </div>

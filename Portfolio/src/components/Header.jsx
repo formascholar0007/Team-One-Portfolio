@@ -1,40 +1,32 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
-    <nav className="bg-gray-800 p-4">
-      <div className="container mx-auto flex justify-between">
-        <div className="text-white text-lg">
-          My Website
-        </div>
-        <div className="space-x-4">
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? 'text-yellow-500' : 'text-white')}
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className={({ isActive }) => (isActive ? 'text-yellow-500' : 'text-white')}
-          >
-            Contact Us
-          </NavLink>
-          <NavLink
-            to="/about"
-            className={({ isActive }) => (isActive ? 'text-yellow-500' : 'text-white')}
-          >
-            About Us
-          </NavLink>
-          <NavLink
-            to="/github"
-            className={({ isActive }) => (isActive ? 'text-yellow-500' : 'text-white')}
-          >
-            Github
-          </NavLink>
-        </div>
-      </div>
-    </nav>
+    <header className="w-full py-4 bg-opacity-50 bg-black">
+    <div className="container mx-auto flex justify-between items-center px-4">
+      <h1 className="text-2xl font-bold hover:animate-ping hover:bg-white rounded-2xl">Team-1</h1>
+      <nav>
+        <ul className="flex space-x-4">
+          <li>
+            <NavLink to="/" className={({ isActive }) => isActive ? 'underline' : undefined}>Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" className={({ isActive }) => isActive ? 'underline' : undefined}>About</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" className={({ isActive }) => isActive ? 'underline' : undefined}>Contact Me</NavLink>
+          </li>
+          <li>
+            <NavLink to="/style-guide" className={({ isActive }) => isActive ? 'underline' : undefined}>Style Guide</NavLink>
+          </li>
+          <li>
+            <NavLink to="/get-theme" className={({ isActive }) => isActive ? 'underline' : undefined}>Get Theme</NavLink>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" className="hover:underline">Search</a>
+    </div>
+  </header>
   );
 }
 
