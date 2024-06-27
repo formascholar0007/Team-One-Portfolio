@@ -2,11 +2,11 @@
 const Contact = () => {
   return (
     <div className="p-8 bg-gradient-to-r from-gray-100 to-gray-300 min-h-screen font-sans">
-      <h1 className="text-5xl font-extrabold text-center mb-12 bg-clip-text ">
-        Contact Us
-      </h1>
+      <header className="bg-blue-600 w-full py-6">
+        <h1 className="text-white text-center text-4xl font-bold">Contact Us</h1>
+      </header>
 
-      <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-8 mb-12">
+      <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-8 mt-6 mb-12">
         <h2 className="text-3xl font-semibold mb-6">Get in Touch</h2>
         <form className="space-y-6">
           <div>

@@ -4,7 +4,8 @@ function Header() {
   return (
     <header className="w-full py-4 bg-opacity-50 bg-black">
     <div className="container mx-auto flex justify-between items-center px-4">
-      <h1 className="text-2xl font-bold transition-transform transform hover:scale-105 rounded-2xl">Team-1</h1>
+      <h1 className="text-2xl font-bold transition-transform transform hover:scale-105 rounded-2xl"><img 
+      className='h-7 rounded-full' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF4_8lTrtyNA6sv4VGvg-DDZv1uO96Bd3f4Q&s" alt="" /></h1>
       <nav>
         <ul className="flex space-x-4">
           <li>
@@ -14,7 +15,7 @@ function Header() {
             <NavLink to="/about" className={({ isActive }) => isActive ? 'underline' : undefined}>About</NavLink>
           </li>
           <li>
-            <NavLink to="/contact" className={({ isActive }) => isActive ? 'underline' : undefined}>Contact Me</NavLink>
+            <NavLink to="/contact" className={({ isActive }) => isActive ? 'underline' : undefined}>Contact Us</NavLink>
           </li>
           <li>
             <NavLink to="/style-guide" className={({ isActive }) => isActive ? 'underline' : undefined}>Style Guide</NavLink>
